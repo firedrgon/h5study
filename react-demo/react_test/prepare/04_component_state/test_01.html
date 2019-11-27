@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>07_component_state</title>
+</head>
+<body>
+
+<div id="example"></div>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+	class Like extends React.Component{
+		constructor(props) {
+		    super(props);
+			this.state = {
+				isLikeMe:true
+			}
+			
+			this.change = this.change.bind(this);
+		}
+		
+		change(){
+			this.setState({
+				isLikeMe:!this.state.isLikeMe
+			})
+		}
+		
+		render(){
+			console.log('render()');
+			const text = this.state.isLikeMe ? '我喜欢你':'你喜欢我吗？';
+			return <h2 onClick={this.change}>{text}</h2>;
+		}
+	}
+	
+	ReactDOM.render(<Like />,document.getElementById('example'));
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
