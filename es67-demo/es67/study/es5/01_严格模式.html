@@ -24,7 +24,12 @@
 -->
 
 <script type="text/javascript">
-
+	let arr = [1,2,3,4,5];
+	let result = arr.reduce((prev, cur, index, arr)=> {
+	    return prev + cur;
+	}, -5);
+	
+	console.info(result);
 </script>
 
 </body>

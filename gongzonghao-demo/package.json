@@ -1,0 +1,33 @@
+{
+  "name": "gongzonghao-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "dplayer": "^1.25.0",
+    "ejs": "~2.6.1",
+    "express": "^4.17.1",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.4.0",
+    "mongoose": "^5.8.1",
+    "nanoid": "^2.1.8",
+    "node-qiniu": "^6.2.0",
+    "nodemon": "^1.17.1",
+    "puppeteer": "^2.0.0",
+    "qiniu": "^7.2.2",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "sha1": "^1.1.1",
+    "xml2js": "^0.4.19"
+  },
+  "devdependencies": {
+    "zepto": "^1.2.0"
+  }
+}
